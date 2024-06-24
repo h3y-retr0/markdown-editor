@@ -36,9 +36,13 @@
     "assert": "^2.1.0",
     "github-markdown-css": "^5.6.1",
     "process": "^0.11.10",
+    "rehype-react": "^8.0.0",
+    "rehype-remark": "^10.0.0",
+    "rehype-stringify": "^10.0.0",
     "remark-gfm": "^4.0.0",
     "remark-parse": "^11.0.0",
     "remark-react": "^9.0.1",
+    "remark-rehype": "^11.1.0",
     "unified": "^11.0.5"
   },
   "overrides": {

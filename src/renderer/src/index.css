@@ -10,6 +10,7 @@ body,
 #root {
   background-color: rgb(23, 23, 23);
   color: rgb(226, 232, 240);
+  height: 100%;
 }
 
 body {
@@ -36,12 +37,14 @@ code {
 
 /* Editor styles */
 
-.cm-content {
+.cm-content,
+.markdown-body,
+.preview.markdown-body pre {
   font-family: 'HackNerdFont' !important;
 }
 
 .ͼ3 .cm-gutters,
 .ͼ3 .cm-activeLi,
 .ͼo .cm-activeLineGutter {
-  background-color: transparent !important;
+  background: none !important;
 }

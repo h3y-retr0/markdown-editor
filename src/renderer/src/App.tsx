@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import './app.css'
 import { Editor } from './components/Editor'
+import { Preview } from './components/Preview'
 
 function App(): JSX.Element {
   const [doc, setDoc] = useState<string>('# Hello, World!')
@@ -10,8 +11,8 @@ function App(): JSX.Element {
   }, [])
   return (
     <div className="app">
-      <h2>Markdown editor</h2>
       <Editor onChange={handleDocChange} initialDoc={doc} />
+      <Preview doc={doc} />
     </div>
   )
 }
