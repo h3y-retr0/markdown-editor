@@ -1,13 +1,21 @@
+@font-face {
+  font-family: 'HackNerdFont';
+  src: url('./assets/fonts/HackNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body,
 #root {
-  background-color: rgb(23, 23, 23) !important;
+  background-color: rgb(23, 23, 23);
   color: rgb(226, 232, 240);
 }
 
 body {
   margin: 0;
   font-family:
+    'HackNerdFont',
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -22,5 +30,18 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, 'Courier New', monospace;
+  font-family: 'HackNerdFont', source-code-pro, Menlo, Monaco, 'Courier New',
+    monospace;
+}
+
+/* Editor styles */
+
+.cm-content {
+  font-family: 'HackNerdFont' !important;
+}
+
+.ͼ3 .cm-gutters,
+.ͼ3 .cm-activeLi,
+.ͼo .cm-activeLineGutter {
+  background-color: transparent !important;
 }

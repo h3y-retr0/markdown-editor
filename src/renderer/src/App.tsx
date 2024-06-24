@@ -1,19 +1,17 @@
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import './app.css'
+import { Editor } from './components/Editor'
 
 function App(): JSX.Element {
-  const [count, setCount] = useState(0)
+  const [doc, setDoc] = useState<string>('# Hello, World!')
 
+  const handleDocChange = useCallback(newDoc => {
+    setDoc(newDoc)
+  }, [])
   return (
     <div className="app">
-      <header className="app-header">
-        <p>Hello vite + react !</p>
-        <p>
-          <button onClick={() => setCount(count => count + 1)}>
-            count is {count}
-          </button>
-        </p>
-      </header>
+      <h2>Markdown editor</h2>
+      <Editor onChange={handleDocChange} initialDoc={doc} />
     </div>
   )
 }
